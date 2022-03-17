@@ -9,6 +9,7 @@ since = 10         # how many days do you want data for
 filepath = f'data{timeframe}/'
 exchange_type = 'future'
 
+# test
 
 def get_tickers(exchange_type: str):
     exchange = ccxt.binance({
