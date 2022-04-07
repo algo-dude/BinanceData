@@ -104,6 +104,8 @@ def scrape_candles_to_csv(max_retries, timeframe, since, market, limit=100000):
         ohlcv = scrape_ohlcv(exchange, max_retries, key, timeframe, since, limit)
         # save them to csv file
         key = key.replace('/', '_')
+        # add column names
+        ohlcv.insert(0, ['Timestamp', 'Open', 'High', 'Low', 'Close', 'Volume'])
         write_to_csv(key, ohlcv)
         print('Saved', len(ohlcv), 'candles from', exchange.iso8601(ohlcv[0][0]), 'to', exchange.iso8601(ohlcv[-1][0]), 'to', key+'.csv')
 
