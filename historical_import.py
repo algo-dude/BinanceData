@@ -8,7 +8,9 @@ market = 'future'
 timeframe = '1d'
 
 # press run button to start
-
+# check line 85 in case that you want frequency under 1h
+# execute in the directory that you want data to go to
+# folder will be /data/{market}/{timeframe} , line 78
 
 # -----------------------------------------------------------------------------
 
