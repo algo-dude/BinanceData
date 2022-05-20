@@ -4,8 +4,8 @@ import ccxt
 import sys
 import csv
 
-market = 'future'
-timeframe = '1d'
+market = 'future' # 'future' or 'spot'
+timeframe = '1d'  # 1m 5m 1h 1d 1w 1m
 
 # press run button to start
 # check line 85 in case that you want frequency under 1h
